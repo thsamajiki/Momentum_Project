@@ -5,7 +5,7 @@ const toDoForm = document.querySelector('.js-toDoForm'),
 
 let toDos=[]; //empty array to save todo
 
-function deletToDo(event) {
+function deleteToDo(event) {
 	const btn = event.target,
 		  li = btn.parentNode;
 	toDoList.removeChild(li);
@@ -30,7 +30,7 @@ function printToDo(text) {
 		  newId = toDos.length+1;
 	
 	delBtn.innerText = "X";
-	delBtn.addEventListener("click",deletToDo);
+	delBtn.addEventListener("click",deleteToDo);
 	span.innerText = text;
 	li.appendChild(span);
 	li.appendChild(delBtn);
